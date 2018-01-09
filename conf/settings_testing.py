@@ -22,7 +22,7 @@ DATABASES = {
         'NAME': 'ip-test',                        # 数据库名 (默认与APP_ID相同)
         'USER': 'root',                            # 你的数据库user
         'PASSWORD': 'bk@321',                        # 你的数据库password
-        'HOST': '',                   		   # 数据库HOST
+        'HOST': '101.226.247.4',                   		   # 数据库HOST
         'PORT': '3306',                        # 默认3306
     },
 }
