@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <!-- 若您需要使用Kendo UI Professional，请联系版权人获得合法的授权或许可。 -->
+
+    <!-- Bootstrap css -->
+    <link href="${STATIC_URL}assets/bootstrap-3.3.4/css/bootstrap.min.css" rel="stylesheet">
+    <!-- kendo ui css -->
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.common.min.css" rel="stylesheet">
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/assets/kendoui-2015.2.624/styles/kendo.default.min.css" rel="stylesheet">
+    <!-- font-awesome -->
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/assets/fontawesome/css/font-awesome.css" rel="stylesheet">
+    <!--蓝鲸提供的公用样式库 -->
+    <link href="https://magicbox.bkclouds.cc/static_api/v3/bk/css/bk.css" rel="stylesheet">
+    <!-- 如果要使用Bootstrap的js插件，必须先调入jQuery -->
+    <script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+    <!-- 包括所有bootstrap的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="https://magicbox.bkclouds.cc/static_api/v3/assets/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <!-- 包括所有kendoui的js插件或者可以根据需要使用的js插件调用　-->
+    <script src="https://magicbox.bkclouds.cc/static_api/v3/assets/kendoui-2015.2.624/js/kendo.all.min.js"></script>
+    <script src="https://magicbox.bkclouds.cc/static_api/v3/bk/js/bk.js"></script>
+    <!-- 以下两个插件用于在IE8以及以下版本浏览器支持HTML5元素和媒体查询，如果不需要用可以移除 -->
+    <!--[if lt IE 9]>
+    <script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/html5shiv.min.js"></script>
+    <script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/respond.min.js"></script>
+    <![endif]-->
+    <!-- 数据埋点统计 -->
+    <script src="https://magicbox.bkclouds.cc/static_api/analysis.js"></script>
+</head>
+<body>
+<div class="king-layout-main king-flexible-setting">
+        <div class="king-vertical-nav9 king-full-height" >
+    <div class="navbar-collapse">
+        <ul class="nav navbar-nav side-nav">
+            <li class="active">
+                <a href="javascript:;"><i class="fa fa-fw fa-dashboard"></i> 首页</a>
+            </li>
+            <li>
+                <a href="javascript:;"><i class="fa fa-fw fa-table"></i> 表格</a>
+            </li>
+            <li>
+                <a href="javascript:;"><i class="fa fa-fw fa-edit"></i> 表单</a>
+            </li>
+            <li>
+                <a href="javascript:;"><i class="fa fa-fw fa-desktop"></i> 排版</a>
+            </li>
+            <li>
+                <a href="javascript:;"><i class="fa fa-fw fa-wrench"></i> Bootstrap 布局</a>
+            </li>
+            <li>
+                <a href="javascript:;" data-toggle="collapse" class="collapsed" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> 下拉菜单 <i class="fa fa-fw fa-caret-down"></i></a>
+                <ul id="demo" class="collapse">
+                    <li>
+                        <a href="javascript:;">子菜单1 </a>
+                    </li>
+                    <li>
+                        <a href="javascript:;">子菜单2</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+        <div class="king-vertical-content king-flex-y">
+            <div class="right-layout-header">
+                <div class="navbar-container">
+                    <div class="king-layout-sider-trigger">
+                        <span class="open-icon"></span>
+                        <span class="close-icon hide"></span>
+                    </div>
+                    <div class="navbar-header pull-right">
+                        <ul class="nav item-pull-right">
+                            <li class="fr header-user">
+                                <div class="fr logout">
+                                  <span class="magic-poweroff">退出</span>
+                                </div>
+                                <div class="fr" id="magic_user">
+                                    <img class="img-rounded" src="https://magicbox.bkclouds.cc/static_api/v3/components/horizontal_nav1/images/avatar.png" alt="" class="avatar">
+                                    <a class="name" href="javascript:;">admin</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="right-layout-main">
+                <div class="king-breadcrumb">
+                    <span class="king-breadcrumb-link">Home</span>
+                    <span class="king-breadcrumb-separator">/</span>
+                    <span class="king-breadcrumb-link">List</span>
+                    <span class="king-breadcrumb-separator">/</span>
+                    <span class="king-breadcrumb-link">App</span>
+                </div>
+                <div class="right-layout-content">
+                    <div class="right-content-main">
+                        <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th style="width: 10px">#</th>
+                            <th style="width:20%;">任务</th>
+                            <th>进度</th>
+                            <th>开发者</th>
+                            <th>结束时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1.</td>
+                            <td>版本更新</td>
+                            <td>
+                                完成
+                            </td>
+                            <td>管理员</td>
+                            <td>2015-09-20</td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td>数据备份</td>
+                            <td>
+                                70%
+                            </td>
+                            <td>管理员</td>
+                            <td>2015-09-20</td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td>定时任务</td>
+                            <td>
+                                未开始
+                            </td>
+                            <td>管理员</td>
+                            <td>2015-09-20</td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td>修复bug</td>
+                            <td>
+                                已结束
+                            </td>
+                            <td>管理员</td>
+                            <td>2015-09-20</td>
+                        </tr>
+                    </tbody>
+                </table>
+                    </div>
+                </div>
+                <!-- footer -->
+                <div class="king-layout-footer"> Copyright © 2012-2017 Tencent BlueKing. All Rights Reserved. 蓝鲸智云 版权所有</div>
+            </div>
+        </div>
+    </div>
+<script src="https://magicbox.bkclouds.cc/static_api/v3/assets/js/jquery-1.10.2.min.js"></script>
+<script>
+    //layoutPanel_js_start
+    $(".flexible-list").on("click","li",function(){
+        $(this).addClass("king-selected-nav").siblings().removeClass("king-selected-nav");
+    });
+
+    setTimeout(function(){
+        $(".king-layout-sider-trigger").unbind("click").click(function(){
+            $(".king-flexible-nav").toggleClass("king-layout-sider-collapsed");
+            $(this).children().toggleClass("hide");
+        })
+    },0)
+    //layoutPanel_js_end
+</script>
+</body>
+</html>
