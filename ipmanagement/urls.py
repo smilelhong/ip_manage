@@ -9,11 +9,15 @@ an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express o
 See the License for the specific language governing permissions and limitations under the License.
 """
 
-from django.conf.urls import patterns
+from django.conf.urls import patterns,url
+from ipmanagement.views import Index,Ip_range
 
 urlpatterns = patterns(
     'ipmanagement.views',
-    (r'^$', 'index'),
-    (r'^all-ip/$', 'all_ip_list'),
-    (r'^use-ip/$', 'index'),
+    url(r'^$', Index.as_view(),name='index'),
+    url(r'^ip_range_list/$', Ip_range.as_view()),
+    url(r'^ip_range_add/$', Ip_range.as_view(),name='ip_range_add'),
+    url(r'^all-ip/$', 'all_ip_list'),
+    url(r'^use-ip/$', 'ip_use_list'),
+    url(r'^unuse-ip/$', 'ip_unuse_list'),
 )
